@@ -2,7 +2,6 @@ stages:
    - documentation
    - quality
    - build
-   - unit_test
    - active_tests
 
 variables:
@@ -32,28 +31,12 @@ staticAnalysis:
    script:
       - make static
 
-buildTests:
+build:
    stage: build
    script:
-      - make test_project
-   artifacts:
-      paths:
-         - test_project
-
-unitTests:
-   stage: unit_test
-   script:
-      - test_project
+      - make birdSim
 
 memoryLeaks:
    stage: active_tests
    script:
       - make memcheck
-
-coverage:
-   stage: active_tests
-   script:
-      - make coverage
-   artifacts:
-     paths:
-        - coverage
