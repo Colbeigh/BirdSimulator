@@ -31,3 +31,26 @@ void Fletchling::allActivities(){
     performActivity;
 }
 
+
+Rufflet::Rufflet() {
+    nestBuilder = new RuffletNestBuilder;
+    nest = nestBuilder ->buildNest
+}
+
+void Rufflet::performActivity{
+    activity->performActivity();
+}
+
+void Rufflet::allActivities(){
+    setActivity(new RuffletSpringActivity());
+    performActivity;
+
+    setActivity(new RuffletSummerActivity());
+    performActivity;
+
+    setActivity(new RuffletFallActivity());
+    performActivity;
+
+    setActivity(new RuffletWinterActivity());
+    performActivity;
+}
