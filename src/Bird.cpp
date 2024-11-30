@@ -18,16 +18,16 @@ void Fletchling::performActivity{
 }
 
 void Fletchling::allActivities(){
-    setActivity(new FletchlingSpringActivity());
+    setActivity(new FletchlingSpring());
     performActivity;
 
-    setActivity(new FletchlingSummerActivity());
+    setActivity(new FletchlingSummer());
     performActivity;
 
-    setActivity(new FletchlingFallActivity());
+    setActivity(new FletchlingFall());
     performActivity;
 
-    setActivity(new FletchlingWinterActivity());
+    setActivity(new FletchlingWinter());
     performActivity;
 }
 
