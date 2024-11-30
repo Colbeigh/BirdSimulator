@@ -13,4 +13,19 @@ public:
  virtual std::vector<bird*> createBird();
 }
 
+class KalosRegionFactory {
+public:
+ RegionFactory();
+ virtual ~RegionFactory();
+ std::vector<bird*> createBird() override;
+}
+
+class UnovaRegionFactory {
+public:
+ RegionFactory();
+ virtual ~RegionFactory();
+ std::vector<bird*> createBird() override;
+}
+
+
 #endif
