@@ -7,35 +7,27 @@ class SeasonActivity {
 public:
  SeasonActivity();
  virtual ~SeasonActivity();
- virtual performActivity() = 0;
+ virtual void performActivity() = 0;
 }
 
 class FletchlingSpring {
 public:
- virtual performActivity(){
-    std:: cout << ""
- }
+ void performActivity() override;
 }
 
 class FletchlingSummer {
 public:
- virtual performActivity(){
-    std:: cout << ""
- }
+ void performActivity() override;
 }
 
 class FletchlingFall {
 public:
- virtual performActivity(){
-    std:: cout << ""
- }
+ void performActivity() override;
 }
 
 class FletchlingWinter {
 public:
- virtual performActivity(){
-    std:: cout << ""
- }
+ void performActivity() override;
 }
 
 #endif
