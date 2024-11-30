@@ -1,4 +1,4 @@
-#ifndef BIRD_HPP
+#ifndef REGIONFACTORY_HPP
 #define REGIONFACTORY_HPP
 
 #include <iostream>
