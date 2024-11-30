@@ -8,4 +8,3 @@ void setActivity(SeasonActivity* newActivity){
     activity = newActivity
 }
 
-
