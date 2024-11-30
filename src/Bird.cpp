@@ -42,15 +42,15 @@ void Rufflet::performActivity{
 }
 
 void Rufflet::allActivities(){
-    setActivity(new RuffletSpringActivity());
+    setActivity(new RuffletSpring());
     performActivity;
 
-    setActivity(new RuffletSummerActivity());
+    setActivity(new RuffletSummer());
     performActivity;
 
-    setActivity(new RuffletFallActivity());
+    setActivity(new RuffletFall());
     performActivity;
 
-    setActivity(new RuffletWinterActivity());
+    setActivity(new RuffletWinter());
     performActivity;
 }
