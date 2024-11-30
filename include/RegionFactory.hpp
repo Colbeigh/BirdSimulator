@@ -3,14 +3,14 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Bird.hpp"
 
 class RegionFactory {
 public:
  RegionFactory();
  virtual ~RegionFactory();
- virtual bird* createBird();
-
+ virtual std::vector<bird*> createBird();
 }
 
 #endif
