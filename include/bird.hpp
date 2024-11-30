@@ -15,6 +15,25 @@ public:
  virtual void buildNest() = 0;
  Nest* getNest();
  void setActivity(SeasonActivity* newActivity);
- void allActivities();
+ virtual void allActivities();
 }
+
+class Fletchling : public Bird {
+public:
+ Fletchling();
+ virtual ~Fletchling();
+ void performActivity() override;
+ void buildNest() override;
+ void allActivities() override;
+}
+
+class Rufflet : public Bird {
+public:
+ Rufflet();
+ virtual ~Rufflet();
+ void performActivity() override;
+ void buildNest() override;
+ void allActivities() override;
+}
+
 #endif
