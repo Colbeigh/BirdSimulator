@@ -1,10 +1,18 @@
 #include <bird.hpp>
 
-Nest* getNest(){
+Nest* Bird::getNest(){
     return nest;
 }
 
-void setActivity(SeasonActivity* newActivity){
+void Bird::setActivity(SeasonActivity* newActivity){
     activity = newActivity
 }
 
+Fletchling::Fletchling() {
+    nestBuilder = new FletchlingNestBuilder;
+    nest = nestBuilder ->buildNest
+}
+
+void Fletchling::performActivity{
+    activity->performActivity();
+}
