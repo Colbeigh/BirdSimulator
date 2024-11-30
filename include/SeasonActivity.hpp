@@ -30,4 +30,24 @@ public:
  void performActivity() override;
 }
 
+class RuffletSpring {
+public:
+ void performActivity() override;
+}
+
+class RuffletSummer {
+public:
+ void performActivity() override;
+}
+
+class RuffletFall {
+public:
+ void performActivity() override;
+}
+
+class RuffletWinter {
+public:
+ void performActivity() override;
+}
+
 #endif
