@@ -21,7 +21,7 @@ class KalosRegionFactory : public RegionFactory {
 
 class UnovaRegionFactory : public RegionFactory {
  public:
-  virtual ~ UnovaRegionFactory();
+  virtual ~UnovaRegionFactory();
   std::vector<Bird*> createBird() override;
   std::vector<Bird*> birds;
 };
