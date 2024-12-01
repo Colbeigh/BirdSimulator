@@ -1,6 +1,6 @@
 #include "SeasonActivity.hpp"
 
-SeasonActivityWithNest::SeasonActivityWithNest(){
+SeasonActivityWithNest::SeasonActivityWithNest() {
     nestbuilder = nullptr;
 }
 
