@@ -4,10 +4,17 @@ Bird::Bird() {
 }
 
 Bird::~Bird() {
+    if (activity) {
     delete activity;
+    activity = nullptr;
+    }
 }
 
 void Bird::setActivity(SeasonActivity* newActivity) {
+    if (activity) {
+        delete activity;
+        activity = nullptr;
+    }
     activity = newActivity;
 }
 
@@ -28,7 +35,10 @@ Fletchling::Fletchling() {
 }
 
 Fletchling::~Fletchling() {
-    delete activity;
+    if (activity) {
+        delete activity;
+        activity = nullptr;
+    }
 }
 
 void Fletchling::allActivities() {
@@ -57,7 +67,10 @@ Rufflet::Rufflet() {
 }
 
 Rufflet::~Rufflet() {
-    delete activity;
+    if (activity) {
+        delete activity;
+        activity = nullptr;
+    }
 }
 
 void Rufflet::allActivities() {
@@ -85,7 +98,10 @@ PikiPek::PikiPek() {
 }
 
 PikiPek::~PikiPek() {
-    delete activity;
+    if (activity) {
+        delete activity;
+        activity = nullptr;
+    }
 }
 
 void PikiPek::allActivities() {
@@ -114,7 +130,10 @@ Starly::Starly() {
 }
 
 Starly::~Starly() {
-    delete activity;
+    if (activity) {
+        delete activity;
+        activity = nullptr;
+    }
 }
 
 void Starly::allActivities() {
