@@ -12,11 +12,11 @@ SeasonActivityWithNest::~SeasonActivityWithNest() {
 }
 
 FletchlingSpring::FletchlingSpring() {
-    nestbuilder = new FletchlingNestBuilder;
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
+    nestbuilder = new FletchlingNestBuilder;
     nest = nestbuilder ->buildNest();
 }
 
@@ -48,11 +48,11 @@ void FletchlingWinter::performActivity(std::string name) {
 }
 
 RuffletSpring::RuffletSpring() {
-    nestbuilder = new RuffletNestBuilder;
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
+    nestbuilder = new RuffletNestBuilder;
     nest = nestbuilder ->buildNest();
 }
 
@@ -91,11 +91,11 @@ void RuffletWinter::performActivity(std::string name) {
 
 
 PikiPekSpring::PikiPekSpring() {
-    nestbuilder = new PikiPekNestBuilder;
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
+    nestbuilder = new PikiPekNestBuilder;
     nest = nestbuilder ->buildNest();
 }
 
@@ -132,11 +132,11 @@ void PikiPekWinter::performActivity(std::string name) {
 }
 
 StarlySpring::StarlySpring() {
-    nestbuilder = new StarlyNestBuilder;
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
+    nestbuilder = new StarlyNestBuilder;
     nest = nestbuilder ->buildNest();
 }
 
