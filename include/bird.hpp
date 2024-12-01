@@ -4,8 +4,6 @@
 #include <iostream>
 #include <string>
 #include "SeasonActivity.hpp"
-#include "NestBuilder.hpp"
-#include "Nest.hpp"
 
 class Bird {
 public:
@@ -18,8 +16,6 @@ public:
 
  std::string name;
  SeasonActivity* activity;
- Nest nest;
- NestBuilder* nestbuilder;
 };
 
 class Fletchling : public Bird {
