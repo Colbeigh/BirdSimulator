@@ -2,7 +2,7 @@
 
 KalosRegionFactory::~KalosRegionFactory() {
     for (Bird* bird : birds) {
-    delete bird;
+        delete bird;
     }
     birds.clear();
 }
@@ -15,7 +15,7 @@ std::vector<Bird*> KalosRegionFactory::createBird() {
 
 UnovaRegionFactory::~UnovaRegionFactory() {
     for (Bird* bird : birds) {
-    delete bird;
+        delete bird;
     }
     birds.clear();
 }
