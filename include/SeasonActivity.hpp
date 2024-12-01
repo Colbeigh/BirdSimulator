@@ -5,8 +5,6 @@
 
 class SeasonActivity {
 public:
- SeasonActivity();
- virtual ~SeasonActivity();
  virtual void performActivity() = 0;
 };
 
