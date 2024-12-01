@@ -24,6 +24,7 @@ void Bird::performActivity() {
 Fletchling::Fletchling() {
     name = "Fletchling";
     region = "Kalos";
+    activity = nullptr;
 }
 
 Fletchling::~Fletchling() {
@@ -52,6 +53,7 @@ void Fletchling::allActivities() {
 Rufflet::Rufflet() {
     name = "Rufflet";
     region = "Unova";
+    activity = nullptr;
 }
 
 Rufflet::~Rufflet() {
@@ -79,6 +81,7 @@ void Rufflet::allActivities() {
 PikiPek::PikiPek() {
     name = "PikiPek";
     region = "Kalos";
+    activity = nullptr;
 }
 
 PikiPek::~PikiPek() {
@@ -107,6 +110,7 @@ void PikiPek::allActivities() {
 Starly::Starly() {
     name = "Starly";
     region = "Unova";
+    activity = nullptr;
 }
 
 Starly::~Starly() {

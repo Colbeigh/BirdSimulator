@@ -17,7 +17,6 @@ UnovaRegionFactory::~UnovaRegionFactory() {
     for (Bird* bird : birds) {
     delete bird;
     }
-    
 }
 
 std::vector<Bird*> UnovaRegionFactory::createBird() {
