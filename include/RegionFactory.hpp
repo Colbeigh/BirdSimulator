@@ -8,20 +8,16 @@
 
 class RegionFactory {
 public:
- virtual std::vector<Bird*> createBird();
+ virtual std::vector<Bird*> createBird() = 0;
 };
 
 class KalosRegionFactory : public RegionFactory {
 public:
- KalosRegionFactory();
- virtual ~KalosRegionFactory();
  std::vector<Bird*> createBird() override;
 };
 
 class UnovaRegionFactory : public RegionFactory {
 public:
- UnovaRegionFactory();
- virtual ~UnovaRegionFactory();
  std::vector<Bird*> createBird() override;
 };
 
