@@ -10,8 +10,14 @@ class NestBuilder {
 public:
  NestBuilder();
  virtual ~NestBuilder();
- virtual void buildNest(Nest nest) =0;
+ virtual void buildNest(Nest& nest) = 0;
 
+ std::vector<std::string> materials;
+};
+
+class FletchlingNestBuilder : public NestBuilder {
+public:
+ void buildNest(Nest& nest) override;
  std::vector<std::string> materials;
 };
 
