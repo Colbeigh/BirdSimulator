@@ -8,33 +8,29 @@
 
 class NestBuilder {
  public:
-  virtual Nest buildNest(Nest nest) = 0;
-
+  NestBuilder();
+  Nest buildNest(Nest& nest);
   std::vector<std::string> materials;
 };
 
 class FletchlingNestBuilder : public NestBuilder {
  public:
-  Nest buildNest(Nest nest) override;
-  std::vector<std::string> materials;
+  FletchlingNestBuilder();
 };
 
 class RuffletNestBuilder : public NestBuilder {
  public:
-  Nest buildNest(Nest nest) override;
-  std::vector<std::string> materials;
+  RuffletNestBuilder();
 };
 
 class PikiPekNestBuilder : public NestBuilder {
  public:
-  Nest buildNest(Nest nest) override;
-  std::vector<std::string> materials;
+  PikiPekNestBuilder();
 };
 
 class StarlyNestBuilder : public NestBuilder {
  public:
-  Nest buildNest(Nest nest) override;
-  std::vector<std::string> materials;
+  StarlyNestBuilder();
 };
 
 #endif
