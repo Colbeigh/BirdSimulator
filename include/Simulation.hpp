@@ -2,15 +2,16 @@
 #define SIMULATION_HPP
 
 #include <iostream>
+#include <vector>
 #include "Bird.hpp"
 #include "RegionFactory.hpp"
 
 class Simulation {
 public:
+ Simulation();
  virtual ~Simulation();
  void Loop();
 
- RegionFactory* kalosFactory;
- RegionFactory* unovaFactory;
+std::vector<RegionFactory*> factories;
 };
 #endif

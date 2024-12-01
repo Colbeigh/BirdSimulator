@@ -1,20 +1,25 @@
 #include "Simulation.hpp"
 
-Simulation::~Simulation() {
-    delete kalosFactory;
-    delete unovaFactory;
+Simulation::Simulation() {
+    factories.push_back(new KalosRegionFactory());
+    factories.push_back(new UnovaRegionFactory());
 }
 
-void Simulation::Loop(){
-    RegionFactory* kalosFactory = new KalosRegionFactory();
-    RegionFactory* unovaFactory = new UnovaRegionFactory();
+Simulation::~Simulation() {
+    for (RegionFactory* factory : factories) {
+        delete factory;
+    }
+}   
 
-    std::vector<Bird*> birds = kalosFactory->createBird();
-    for(int i = 0; i < birds.size(); i++) {
-        birds[i]->allActivities();
+void Simulation::Loop(){
+    for (RegionFactory* factory : factories) {
+        std::vector<Bird*> birds = factory->createBird();
+        for(int i = 0; i < birds.size(); i++) {
+           birds[i]->allActivities();
+        }
+        for (Bird* bird : birds) {
+            delete bird;
+        }
+        birds.clear();
     }
-    for (Bird* bird : birds) {
-        delete bird;
-    }
-    birds.clear();
 }
