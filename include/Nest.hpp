@@ -12,7 +12,7 @@ public:
  void addMaterial (std::string material);
  void printNest();
 
- std::vector<std::string material> materials;
-}
+ std::vector<std::string> materials;
+};
 
 #endif
