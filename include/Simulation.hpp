@@ -14,7 +14,6 @@ class Simulation {
 
     RegionFactory* factory1;
     RegionFactory* factory2;
-    std::vector<Bird*> birds1;
-    std::vector<Bird*> birds2;
+    std::vector<Bird*> birds;
 };
 #endif
