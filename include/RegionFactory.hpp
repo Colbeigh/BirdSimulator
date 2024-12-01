@@ -8,8 +8,6 @@
 
 class RegionFactory {
 public:
- RegionFactory();
- virtual ~RegionFactory();
  virtual std::vector<Bird*> createBird();
 };
 
