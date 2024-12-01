@@ -2,7 +2,7 @@
 
 FletchlingSpring::FletchlingSpring() {
     nestbuilder = new FletchlingNestBuilder;
-    nestbuilder ->buildNest(nest);
+    nest = nestbuilder ->buildNest(nest);
 }
 
 void FletchlingSpring::performActivity(std::string name) {
@@ -30,7 +30,7 @@ void FletchlingWinter::performActivity(std::string name) {
 
 RuffletSpring::RuffletSpring() {
     nestbuilder = new RuffletNestBuilder;
-    nestbuilder ->buildNest(nest);
+    nest = nestbuilder ->buildNest(nest);
 }
 
 void RuffletSpring::performActivity(std::string name) {
@@ -62,7 +62,7 @@ void RuffletWinter::performActivity(std::string name) {
 
 PikiPekSpring::PikiPekSpring() {
     nestbuilder = new PikiPekNestBuilder;
-    nestbuilder ->buildNest(nest);
+    nest = nestbuilder ->buildNest(nest);
 }
 
 void PikiPekSpring::performActivity(std::string name) {
@@ -92,7 +92,7 @@ void PikiPekWinter::performActivity(std::string name) {
 
 StarlySpring::StarlySpring() {
     nestbuilder = new StarlyNestBuilder;
-    nestbuilder ->buildNest(nest);
+    nest = nestbuilder ->buildNest(nest);
 }
 
 void StarlySpring::performActivity(std::string name) {
