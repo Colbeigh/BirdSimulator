@@ -7,8 +7,6 @@
 
 class Nest {
 public:
- Nest();
- virtual ~Nest();
  void addMaterial (std::string material);
  void printNest();
 
