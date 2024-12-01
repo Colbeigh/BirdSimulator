@@ -11,7 +11,10 @@ Bird::~Bird() {
 }
 
 void Bird::setActivity(SeasonActivity* newActivity) {
+    if (activity) {
     delete activity;
+    activity = nullptr;
+    }
     activity = newActivity;
 }
 
@@ -143,6 +146,4 @@ void Starly::allActivities() {
 
     setActivity(new StarlyWinter());
     performActivity();
-    delete activity;
-    activity = nullptr;
 }
