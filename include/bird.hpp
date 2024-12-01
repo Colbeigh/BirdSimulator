@@ -9,14 +9,14 @@
 
 class Bird {
 public:
- bird();
- virtual ~bird();
+ Bird();
+ virtual ~Bird();
  virtual void performActivity() = 0;
  virtual void buildNest() = 0;
  Nest* getNest();
  void setActivity(SeasonActivity* newActivity);
  virtual void allActivities();
-}
+};
 
 class Fletchling : public Bird {
 public:
@@ -25,7 +25,7 @@ public:
  void performActivity() override;
  void buildNest() override;
  void allActivities() override;
-}
+};
 
 class Rufflet : public Bird {
 public:
@@ -34,6 +34,6 @@ public:
  void performActivity() override;
  void buildNest() override;
  void allActivities() override;
-}
+};
 
 #endif

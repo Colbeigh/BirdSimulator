@@ -10,7 +10,7 @@ void Bird::setActivity(SeasonActivity* newActivity){
 
 Fletchling::Fletchling() {
     nestBuilder = new FletchlingNestBuilder;
-    nest = nestBuilder ->buildNest
+    nest = nestBuilder ->buildNest(nest);
 }
 
 void Fletchling::performActivity{
