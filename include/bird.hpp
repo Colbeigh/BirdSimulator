@@ -13,9 +13,14 @@ public:
  virtual ~Bird();
  virtual void performActivity() = 0;
  virtual void buildNest() = 0;
- Nest* getNest();
+ Nest getNest();
  void setActivity(SeasonActivity* newActivity);
  virtual void allActivities();
+
+ std::string name;
+ SeasonActivity* activity;
+ Nest nest;
+ NestBuilder* nestbuilder;
 };
 
 class Fletchling : public Bird {
