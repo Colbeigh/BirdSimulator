@@ -24,9 +24,7 @@ Fletchling::Fletchling() {
     region = "Kalos";
 }
 
-Fletchling::~Fletchling() {
-    delete activity;
-}
+Fletchling::~Fletchling() {}
 
 void Fletchling::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
@@ -77,9 +75,7 @@ PikiPek::PikiPek() {
     region = "Kalos";
 }
 
-PikiPek::~PikiPek() {
-    delete activity;
-}
+PikiPek::~PikiPek() {}
 
 void PikiPek::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
@@ -105,9 +101,7 @@ Starly::Starly() {
     region = "Unova";
 }
 
-Starly::~Starly() {
-    delete activity;
-}
+Starly::~Starly() {}
 
 void Starly::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
