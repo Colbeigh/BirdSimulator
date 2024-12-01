@@ -9,6 +9,10 @@ Simulation::~Simulation() {
     for (RegionFactory* factory : factories) {
         delete factory;
     }
+    
+    for (Bird* bird : birds) {
+        delete bird;
+    }
 }
 
 void Simulation::Loop() {
