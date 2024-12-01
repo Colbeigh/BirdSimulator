@@ -21,6 +21,7 @@ class SeasonActivityWithNest : public SeasonActivity {
 class FletchlingSpring : public SeasonActivityWithNest {
  public:
   FletchlingSpring();
+  virtual ~FletchlingSpring();
   void performActivity(std::string name) override;
 };
 
@@ -63,6 +64,7 @@ class RuffletWinter : public SeasonActivity {
 class PikiPekSpring : public SeasonActivityWithNest {
  public:
   PikiPekSpring();
+  virtual ~PikiPekSpring();
   void performActivity(std::string name) override;
 };
 
@@ -84,6 +86,7 @@ class PikiPekWinter : public SeasonActivity {
 class StarlySpring : public SeasonActivityWithNest {
  public:
   StarlySpring();
+  virtual ~StarlySpring();
   void performActivity(std::string name) override;
 };
 
