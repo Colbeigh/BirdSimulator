@@ -1,5 +1,13 @@
 #include "SeasonActivity.hpp"
 
+SeasonActivityWithNest::SeasonActivityWithNest(){
+    nestbuilder = nullptr;
+}
+
+SeasonActivityWithNest::~SeasonActivityWithNest() {
+    delete nestbuilder;
+}
+
 FletchlingSpring::FletchlingSpring() {
     nestbuilder = new FletchlingNestBuilder;
     nest = nestbuilder ->buildNest(nest);

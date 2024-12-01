@@ -13,6 +13,8 @@ class SeasonActivity {
 
 class SeasonActivityWithNest : public SeasonActivity {
  public:
+  SeasonActivityWithNest();
+  virtual ~SeasonActivityWithNest() {};
   virtual void performActivity(std::string name) = 0;
   Nest nest;
   NestBuilder* nestbuilder;
