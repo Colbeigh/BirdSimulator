@@ -14,6 +14,11 @@ void Bird::cleanUp() {
     activity = nullptr;
 }
 
+void Bird::performActivity() {
+    activity->performActivity(name);
+    cleanUp();
+}
+
 Fletchling::Fletchling() {
     name = "Fletchling";
     region = "Kalos";
@@ -21,11 +26,6 @@ Fletchling::Fletchling() {
 
 Fletchling::~Fletchling() {
     delete activity;
-}
-
-void Fletchling::performActivity() {
-    activity->performActivity(name);
-    cleanUp();
 }
 
 void Fletchling::allActivities() {
@@ -54,10 +54,6 @@ Rufflet::Rufflet() {
 
 Rufflet::~Rufflet() {}
 
-void Rufflet::performActivity() {
-    activity->performActivity(name);
-}
-
 void Rufflet::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
     std::cout << name << "'s home region is " <<
@@ -83,10 +79,6 @@ PikiPek::PikiPek() {
 
 PikiPek::~PikiPek() {
     delete activity;
-}
-
-void PikiPek::performActivity() {
-    activity->performActivity(name);
 }
 
 void PikiPek::allActivities() {
@@ -115,10 +107,6 @@ Starly::Starly() {
 
 Starly::~Starly() {
     delete activity;
-}
-
-void Starly::performActivity() {
-    activity->performActivity(name);
 }
 
 void Starly::allActivities() {
