@@ -8,46 +8,46 @@ public:
  SeasonActivity();
  virtual ~SeasonActivity();
  virtual void performActivity() = 0;
-}
+};
 
-class FletchlingSpring {
+class FletchlingSpring : public SeasonActivity {
 public:
  void performActivity() override;
-}
+};
 
-class FletchlingSummer {
+class FletchlingSummer : public SeasonActivity {
 public:
  void performActivity() override;
-}
+};
 
-class FletchlingFall {
+class FletchlingFall : public SeasonActivity {
 public:
  void performActivity() override;
-}
+};
 
-class FletchlingWinter {
+class FletchlingWinter : public SeasonActivity {
 public:
  void performActivity() override;
-}
+};
 
-class RuffletSpring {
+class RuffletSpring : public SeasonActivity {
 public:
  void performActivity() override;
-}
+};
 
-class RuffletSummer {
+class RuffletSummer : public SeasonActivity {
 public:
  void performActivity() override;
-}
+};
 
-class RuffletFall {
+class RuffletFall : public SeasonActivity {
 public:
  void performActivity() override;
-}
+};
 
-class RuffletWinter {
+class RuffletWinter : public SeasonActivity {
 public:
  void performActivity() override;
-}
+};
 
 #endif

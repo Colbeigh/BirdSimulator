@@ -11,21 +11,21 @@ public:
  RegionFactory();
  virtual ~RegionFactory();
  virtual std::vector<bird*> createBird();
-}
+};
 
-class KalosRegionFactory {
+class KalosRegionFactory : public RegionFactory {
 public:
  RegionFactory();
  virtual ~RegionFactory();
  std::vector<bird*> createBird() override;
-}
+};
 
-class UnovaRegionFactory {
+class UnovaRegionFactory : public RegionFactory {
 public:
  RegionFactory();
  virtual ~RegionFactory();
  std::vector<bird*> createBird() override;
-}
+};
 
 
 #endif
