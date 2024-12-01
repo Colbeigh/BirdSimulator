@@ -1,8 +1,8 @@
 #include "Simulation.hpp"
 
 Simulation::Simulation() {
-    RegionFactory* factory1 = new KalosRegionFactory();
-    RegionFactory* factory2 = new UnovaRegionFactory();
+    factory1 = new KalosRegionFactory();
+    factory2 = new UnovaRegionFactory();
 }
 
 Simulation::~Simulation() {
@@ -17,7 +17,6 @@ Simulation::~Simulation() {
         delete bird;
     }
     birds2.clear();
-
 }
 
 void Simulation::Loop() {
@@ -38,5 +37,4 @@ void Simulation::Loop() {
             delete bird;
         }
         birds2.clear();
-
 }
