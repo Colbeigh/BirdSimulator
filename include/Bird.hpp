@@ -10,7 +10,6 @@ class Bird {
   Bird();
   virtual ~Bird();
   void setActivity(SeasonActivity* newActivity);
-  void cleanUp();
   void performActivity();
   virtual void allActivities() = 0;
 

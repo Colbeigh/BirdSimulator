@@ -18,14 +18,8 @@ void Bird::setActivity(SeasonActivity* newActivity) {
     activity = newActivity;
 }
 
-void Bird::cleanUp() {
-    delete activity;
-    activity = nullptr;
-}
-
 void Bird::performActivity() {
     activity->performActivity(name);
-    cleanUp();
 }
 
 Fletchling::Fletchling() {
