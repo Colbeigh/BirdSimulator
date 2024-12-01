@@ -2,17 +2,18 @@
 #define SEASONACTIVITY_HPP
 
 #include <iostream>
+#include <string>
 #include "NestBuilder.hpp"
 #include "Nest.hpp"
 
 class SeasonActivity {
 public:
- virtual void performActivity() = 0;
+ virtual void performActivity(std::string name) = 0;
 };
 
 class SeasonActivityWithNest : public SeasonActivity {
 public:
- virtual void performActivity() = 0;
+ virtual void performActivity(std::string name) = 0;
  Nest nest;
  NestBuilder* nestbuilder;
 };
@@ -20,43 +21,43 @@ public:
 class FletchlingSpring : public SeasonActivityWithNest {
 public:
  FletchlingSpring();
- void performActivity() override;
+ void performActivity(std::string name) override;
 };
 
 class FletchlingSummer : public SeasonActivity {
 public:
- void performActivity() override;
+ void performActivity(std::string name) override;
 };
 
 class FletchlingFall : public SeasonActivity {
 public:
- void performActivity() override;
+ void performActivity(std::string name) override;
 };
 
 class FletchlingWinter : public SeasonActivity {
 public:
- void performActivity() override;
+ void performActivity(std::string name) override;
 };
 
 class RuffletSpring : public SeasonActivityWithNest {
 public:
  RuffletSpring();
- void performActivity() override;
+ void performActivity(std::string name) override;
 };
 
 class RuffletSummer : public SeasonActivity {
 public:
- void performActivity() override;
+ void performActivity(std::string name) override;
 };
 
 class RuffletFall : public SeasonActivity {
 public:
- void performActivity() override;
+ void performActivity(std::string name) override;
 };
 
 class RuffletWinter : public SeasonActivity {
 public:
- void performActivity() override;
+ void performActivity(std::string name) override;
 };
 
 #endif

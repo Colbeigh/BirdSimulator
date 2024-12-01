@@ -3,24 +3,18 @@ Bird::Bird(){}
 
 Bird::~Bird(){}
 
-Nest Bird::getNest(){
-    return nest;
-}
-
 void Bird::setActivity(SeasonActivity* newActivity){
     activity = newActivity;
 }
 
 Fletchling::Fletchling() {
-    nestbuilder = new FletchlingNestBuilder;
-    nestbuilder ->buildNest(nest);
     name = "Fletchling";
 }
 
 Fletchling::~Fletchling() {}
 
 void Fletchling::performActivity(){
-    activity->performActivity();
+    activity->performActivity(name);
 }
 
 void Fletchling::allActivities(){
@@ -39,15 +33,13 @@ void Fletchling::allActivities(){
 
 
 Rufflet::Rufflet() {
-    nestbuilder = new RuffletNestBuilder;
-    nest = nestbuilder ->buildNest(nest);
     name = "Rufflet";
 }
 
 Rufflet::~Rufflet() {}
 
 void Rufflet::performActivity(){
-    activity->performActivity();
+    activity->performActivity(name);
 }
 
 void Rufflet::allActivities(){
