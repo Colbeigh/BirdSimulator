@@ -7,7 +7,7 @@
 
 class Simulation {
 public:
- //virtual ~Simulation();
+ virtual ~Simulation();
  void Loop();
 
  RegionFactory* kalosFactory;
