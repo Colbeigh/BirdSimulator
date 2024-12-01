@@ -35,4 +35,20 @@ public:
  void allActivities() override;
 };
 
+class PikiPek : public Bird {
+public:
+ PikiPek();
+ virtual ~PikiPek();
+ void performActivity() override;
+ void allActivities() override;
+};
+
+class Starly : public Bird {
+public:
+ Starly();
+ virtual ~Starly();
+ void performActivity() override;
+ void allActivities() override;
+};
+
 #endif

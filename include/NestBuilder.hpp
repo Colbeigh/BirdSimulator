@@ -25,4 +25,16 @@ public:
  std::vector<std::string> materials;
 };
 
+class PikiPekNestBuilder : public NestBuilder {
+public:
+ Nest buildNest(Nest& nest) override;
+ std::vector<std::string> materials;
+};
+
+class StarlyNestBuilder : public NestBuilder {
+public:
+ Nest buildNest(Nest& nest) override;
+ std::vector<std::string> materials;
+};
+
 #endif

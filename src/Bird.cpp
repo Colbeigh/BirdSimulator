@@ -63,3 +63,60 @@ void Rufflet::allActivities(){
     setActivity(new RuffletWinter());
     performActivity();
 }
+
+PikiPek::PikiPek() {
+    name = "Fletchling";
+    region = "PikiPek";
+    std::cout <<"----- " << name <<" -----\n";
+    std::cout << name << "'s home region is " <<
+    region << ".\n";
+}
+
+PikiPek::~PikiPek() {}
+
+void PikiPek::performActivity(){
+    activity->performActivity(name);
+}
+
+void PikiPek::allActivities(){
+    setActivity(new PikiPekSpring());
+    performActivity();
+
+    setActivity(new PikiPekSummer());
+    performActivity();
+
+    setActivity(new PikiPekFall());
+    performActivity();
+
+    setActivity(new PikiPekWinter());
+    performActivity();
+}
+
+
+Starly::Starly() {
+    name = "Starly";
+    region = "Unova";
+    std::cout <<"----- " << name <<" -----\n";
+    std::cout << name << "'s home region is " <<
+    region << ".\n";
+}
+
+Starly::~Starly() {}
+
+void Starly::performActivity(){
+    activity->performActivity(name);
+}
+
+void Starly::allActivities(){
+    setActivity(new StarlySpring());
+    performActivity();
+
+    setActivity(new StarlySummer());
+    performActivity();
+
+    setActivity(new StarlyFall());
+    performActivity();
+
+    setActivity(new StarlyWinter());
+    performActivity();
+}

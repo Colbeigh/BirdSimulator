@@ -60,4 +60,46 @@ public:
  void performActivity(std::string name) override;
 };
 
+class PikiPekSpring : public SeasonActivityWithNest {
+public:
+ PikiPekSpring();
+ void performActivity(std::string name) override;
+};
+
+class PikiPekSummer : public SeasonActivity {
+public:
+ void performActivity(std::string name) override;
+};
+
+class PikiPekFall : public SeasonActivity {
+public:
+ void performActivity(std::string name) override;
+};
+
+class PikiPekWinter : public SeasonActivity {
+public:
+ void performActivity(std::string name) override;
+};
+
+class StarlySpring : public SeasonActivityWithNest {
+public:
+ StarlySpring();
+ void performActivity(std::string name) override;
+};
+
+class StarlySummer : public SeasonActivity {
+public:
+ void performActivity(std::string name) override;
+};
+
+class StarlyFall : public SeasonActivity {
+public:
+ void performActivity(std::string name) override;
+};
+
+class StarlyWinter : public SeasonActivity {
+public:
+ void performActivity(std::string name) override;
+};
+
 #endif
