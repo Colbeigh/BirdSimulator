@@ -54,7 +54,7 @@ void RuffletFall::performActivity(std::string name) {
 
 void RuffletWinter::performActivity(std::string name) {
     std::cout << "\nSeason: Winter.\n";
-    std::cout << name << "Ditches its mate to find a steel" <<
+    std::cout << name << " Ditches its mate to find a steel " <<
     "winged bird\n";
     std::cout << "Migrated to Alola\n";
 }
