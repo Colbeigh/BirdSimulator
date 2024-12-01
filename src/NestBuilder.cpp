@@ -1,8 +1,7 @@
 #include "NestBuilder.hpp"
 
 Nest FletchlingNestBuilder::buildNest(Nest& nest) {
-    std::vector<std::string> materials = {"fletchMaterial 1",
-    "fletchMaterial 2", "fletchMaterial 3"};
+    std::vector<std::string> materials = {"Newspaper"};
     for (int i = 0; i < materials.size(); i++) {
         nest.addMaterial(materials[i]);
     }
@@ -10,8 +9,8 @@ Nest FletchlingNestBuilder::buildNest(Nest& nest) {
 }
 
 Nest RuffletNestBuilder::buildNest(Nest& nest) {
-    std::vector<std::string> materials = {"RufMaterial 1",
-    "RufMaterial 2", "RufMaterial 3"};
+    std::vector<std::string> materials = {"An Odd Branch",
+    "Magical Leaves", "Grass"};
     for (int i = 0; i < materials.size(); i++) {
         nest.addMaterial(materials[i]);
     }
