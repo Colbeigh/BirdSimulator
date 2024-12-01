@@ -67,25 +67,27 @@ PikiPekSpring::PikiPekSpring() {
 
 void PikiPekSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
-    std::cout << "Migrating to Kanto.\n";
+    std::cout << "Migrating to Galar.\n";
     nest.printNest();
-    std::cout << name << " Is looking for a mate with " <<
-    "silver feathers.\n";
+    std::cout << name << " is looking for a mate that " <<
+    "cannot fly.\n";
 }
 
 void PikiPekSummer::performActivity(std::string name) {
     std::cout << "\nSeason: Summer\n";
-    std::cout << name << " Is looking for apricots to eat.\n";
+    std::cout << name << " Started a battle with a Diglett.\n";
+    std::cout << name << " is tending its wounds.\n";
 }
 
 void PikiPekFall::performActivity(std::string name) {
     std::cout << "\nSeason: Fall.\n";
-    std::cout << "Migrating to Galar.\n";
+    std::cout << "Migrating to Hoenn.\n";
+    std::cout << "Looking for a meal along the beach.\n";
 }
 
 void PikiPekWinter::performActivity(std::string name) {
     std::cout << "\nSeason: Winter\n";
-    std::cout << name << " has found a mate and has laid an egg.\n\n";
+    std::cout << name << " was caught by a trainer.\n\n";
 }
 
 StarlySpring::StarlySpring() { 
@@ -95,26 +97,22 @@ StarlySpring::StarlySpring() {
 
 void StarlySpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
-    std::cout << "Migrating to Johto.\n";
     nest.printNest();
-    std::cout << name << " Is looking for a mate with " <<
-    "steel wings.\n";
+    std::cout << name << "Protects its flock from wild Pikachu\n";
 }
 
 void StarlySummer::performActivity(std::string name) {
     std::cout << "\nSeason: Summer.\n";
-    std::cout << name << " has settled for a non steel " <<
-    "winged bird.\n";
+    std::cout << name << "Teaches its flock how to fight\n";
 }
 
 void StarlyFall::performActivity(std::string name) {
     std::cout << "\nSeason: Fall.\n";
-    std::cout << name << " reluctantly mates and lays an egg.\n";
+    std::cout << name << " gets injured fending off the " <<
+    "wild Pikachu.\n";
 }
 
 void StarlyWinter::performActivity(std::string name) {
     std::cout << "\nSeason: Winter.\n";
-    std::cout << name << " Ditches its mate to find a steel " <<
-    "winged bird\n";
-    std::cout << "Migrated to Alola\n\n";
+    std::cout << name << " succumbs to its wounds \n\n";
 }
