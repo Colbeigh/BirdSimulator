@@ -1,4 +1,7 @@
-#include <bird.hpp>
+#include "Bird.hpp"
+Bird::Bird(){}
+
+Bird::~Bird(){}
 
 Nest Bird::getNest(){
     return nest;
@@ -13,6 +16,8 @@ Fletchling::Fletchling() {
     nestbuilder ->buildNest(nest);
     name = "Fletchling";
 }
+
+Fletchling::~Fletchling() {}
 
 void Fletchling::performActivity(){
     activity->performActivity();
@@ -38,6 +43,8 @@ Rufflet::Rufflet() {
     nest = nestbuilder ->buildNest(nest);
     name = "Rufflet";
 }
+
+Rufflet::~Rufflet() {}
 
 void Rufflet::performActivity(){
     activity->performActivity();

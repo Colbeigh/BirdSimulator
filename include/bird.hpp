@@ -12,7 +12,6 @@ public:
  Bird();
  virtual ~Bird();
  virtual void performActivity() = 0;
- virtual void buildNest() = 0;
  Nest getNest();
  void setActivity(SeasonActivity* newActivity);
  virtual void allActivities();
@@ -28,7 +27,6 @@ public:
  Fletchling();
  virtual ~Fletchling();
  void performActivity() override;
- void buildNest() override;
  void allActivities() override;
 };
 
@@ -37,7 +35,6 @@ public:
  Rufflet();
  virtual ~Rufflet();
  void performActivity() override;
- void buildNest() override;
  void allActivities() override;
 };
 
