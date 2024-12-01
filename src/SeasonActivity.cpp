@@ -21,6 +21,7 @@ void FletchlingSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     std::cout << "Migrating to Kanto.\n";
     nest.printNest();
+    delete nestbuilder;
     std::cout << name << " Is looking for a mate with " <<
     "silver feathers.\n";
 }
@@ -53,6 +54,7 @@ void RuffletSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     std::cout << "Migrating to Johto.\n";
     nest.printNest();
+    delete nestbuilder;
     std::cout << name << " Is looking for a mate with " <<
     "steel wings.\n";
 }
@@ -89,6 +91,7 @@ void PikiPekSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     std::cout << "Migrating to Galar.\n";
     nest.printNest();
+    delete nestbuilder;
     std::cout << name << " is looking for a mate that " <<
     "cannot fly.\n";
 }
@@ -122,6 +125,7 @@ StarlySpring::~StarlySpring() {
 void StarlySpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     nest.printNest();
+    delete nestbuilder;
     std::cout << name << "Protects its flock from wild Pikachu\n";
 }
 
