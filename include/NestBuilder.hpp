@@ -9,7 +9,7 @@
 class NestBuilder {
  public:
   NestBuilder();
-  Nest buildNest(Nest& nest);
+  Nest buildNest(Nest nest);
   std::vector<std::string> materials;
 };
 

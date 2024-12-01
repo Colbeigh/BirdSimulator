@@ -1,9 +1,9 @@
 #include "NestBuilder.hpp"
 NestBuilder::NestBuilder() {
-    materials = {""};
+    materials = {"NEws"};
 }
 
-Nest NestBuilder::buildNest(Nest& nest) {
+Nest NestBuilder::buildNest(Nest nest) {
     for (int i = 0; i < materials.size(); i++) {
         nest.addMaterial(materials[i]);
     }
