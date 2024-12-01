@@ -9,9 +9,8 @@ class Bird {
 public:
  Bird();
  virtual ~Bird();
- virtual void performActivity() = 0;
- Nest getNest();
  void setActivity(SeasonActivity* newActivity);
+ virtual void performActivity() = 0;
  virtual void allActivities() = 0;
 
  std::string name;
