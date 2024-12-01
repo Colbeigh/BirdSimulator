@@ -6,7 +6,6 @@ Simulation::Simulation() {
 }
 
 Simulation::~Simulation() {
-    
     delete factory1;
     delete factory2;
 }
