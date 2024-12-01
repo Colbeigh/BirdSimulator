@@ -1,10 +1,19 @@
 #include "Bird.hpp"
-Bird::Bird() {}
+Bird::Bird() {
+    activity = nullptr;
+}
 
-Bird::~Bird() {}
+Bird::~Bird() {
+
+}
 
 void Bird::setActivity(SeasonActivity* newActivity) {
     activity = newActivity;
+}
+
+void Bird::cleanUp() {
+    delete activity;
+    activity = nullptr;
 }
 
 Fletchling::Fletchling() {
@@ -12,10 +21,13 @@ Fletchling::Fletchling() {
     region = "Kalos";
 }
 
-Fletchling::~Fletchling() {}
+Fletchling::~Fletchling() {
+    delete activity;
+}
 
 void Fletchling::performActivity() {
     activity->performActivity(name);
+    cleanUp();
 }
 
 void Fletchling::allActivities() {
@@ -71,7 +83,9 @@ PikiPek::PikiPek() {
     region = "Kalos";
 }
 
-PikiPek::~PikiPek() {}
+PikiPek::~PikiPek() {
+    delete activity;
+}
 
 void PikiPek::performActivity() {
     activity->performActivity(name);
@@ -101,7 +115,9 @@ Starly::Starly() {
     region = "Unova";
 }
 
-Starly::~Starly() {}
+Starly::~Starly() {
+    delete activity;
+}
 
 void Starly::performActivity() {
     activity->performActivity(name);
