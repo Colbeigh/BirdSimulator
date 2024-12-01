@@ -2,7 +2,8 @@
 #include "Simulation.hpp"
 
 int main() {
-    Simulation simulation;
-    simulation.Loop();
+    Simulation* simulation;
+    simulation->Loop();
+    delete simulation;
     return 0;
 }
