@@ -8,7 +8,7 @@
 
 class SeasonActivity {
  public:
-   virtual void performActivity(std::string name) = 0;
+  virtual void performActivity(std::string name) = 0;
 };
 
 class SeasonActivityWithNest : public SeasonActivity {

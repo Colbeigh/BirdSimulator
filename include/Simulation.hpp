@@ -12,6 +12,6 @@ class Simulation {
   virtual ~Simulation();
   void Loop();
 
- std::vector<RegionFactory*> factories;
+  std::vector<RegionFactory*> factories;
 };
 #endif
