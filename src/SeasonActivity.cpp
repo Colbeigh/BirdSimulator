@@ -6,24 +6,26 @@ FletchlingSpring::FletchlingSpring() {
 }
 
 void FletchlingSpring::performActivity(std::string name) {
-    std::cout << "\nSeason: Spring\n";
-    std::cout << "Fletchling Spring Activity\n";
+    std::cout << "\nSeason: Spring.\n";
+    std::cout << "Migrating to Kanto.\n";
     nest.printNest();
+    std::cout << name << " Is looking for a mate with " <<
+    "silver feathers.\n";
 }
 
 void FletchlingSummer::performActivity(std::string name) {
     std::cout << "\nSeason: Summer\n";
-    std::cout << "Fletchling Summer Activity\n";
+    std::cout << name << " Is looking for apricots to eat.\n";
 }
 
 void FletchlingFall::performActivity(std::string name) {
-    std::cout << "\nSeason: Fall\n";
-    std::cout << "Fletchling Fall Activity\n";
+    std::cout << "\nSeason: Fall.\n";
+    std::cout << "Migrating to Galar.\n";
 }
 
 void FletchlingWinter::performActivity(std::string name) {
     std::cout << "\nSeason: Winter\n";
-    std::cout << "Fletchling Winter Activity\n";
+    std::cout << name << " has found a mate and has laid an egg.\n";
 }
 
 RuffletSpring::RuffletSpring() { 
@@ -32,22 +34,27 @@ RuffletSpring::RuffletSpring() {
 }
 
 void RuffletSpring::performActivity(std::string name) {
-    std::cout << "\nSeason: Spring\n";
-    std::cout << "Rufflet Spring Activity\n";
+    std::cout << "\nSeason: Spring.\n";
+    std::cout << "Migrating to Johto.\n";
     nest.printNest();
+    std::cout << name << " Is looking for a mate with " <<
+    "steel wings.\n";
 }
 
 void RuffletSummer::performActivity(std::string name) {
-    std::cout << "\nSeason: Summer\n";
-    std::cout << "Rufflet Summer Activity\n";
+    std::cout << "\nSeason: Summer.\n";
+    std::cout << name << " has settled for a non steel " <<
+    "winged bird.\n";
 }
 
 void RuffletFall::performActivity(std::string name) {
-    std::cout << "\nSeason: Fallr\n";
-    std::cout << "Ruffletg Fall Activity\n";
+    std::cout << "\nSeason: Fall.\n";
+    std::cout << name << " reluctantly mates and lays an egg.\n";
 }
 
 void RuffletWinter::performActivity(std::string name) {
-    std::cout << "\nSeason: Winter\n";
-    std::cout << "Rufflet Winter Activity\n";
+    std::cout << "\nSeason: Winter.\n";
+    std::cout << name << "Ditches its mate to find a steel" <<
+    "winged bird\n";
+    std::cout << "Migrated to Alola\n";
 }
