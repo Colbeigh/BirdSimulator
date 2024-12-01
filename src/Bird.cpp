@@ -10,9 +10,6 @@ void Bird::setActivity(SeasonActivity* newActivity){
 Fletchling::Fletchling() {
     name = "Fletchling";
     region = "Kalos";
-    std::cout <<"----- " << name <<" -----\n";
-    std::cout << name << "'s home region is " <<
-    region << ".\n";
 }
 
 Fletchling::~Fletchling() {}
@@ -22,6 +19,10 @@ void Fletchling::performActivity(){
 }
 
 void Fletchling::allActivities(){
+    std::cout <<"----- " << name <<" -----\n";
+    std::cout << name << "'s home region is " <<
+    region << ".\n";
+
     setActivity(new FletchlingSpring());
     performActivity();
 
@@ -39,9 +40,6 @@ void Fletchling::allActivities(){
 Rufflet::Rufflet() {
     name = "Rufflet";
     region = "Unova";
-    std::cout <<"----- " << name <<" -----\n";
-    std::cout << name << "'s home region is " <<
-    region << ".\n";
 }
 
 Rufflet::~Rufflet() {}
@@ -51,6 +49,10 @@ void Rufflet::performActivity(){
 }
 
 void Rufflet::allActivities(){
+    std::cout <<"----- " << name <<" -----\n";
+    std::cout << name << "'s home region is " <<
+    region << ".\n";
+
     setActivity(new RuffletSpring());
     performActivity();
 
@@ -65,11 +67,8 @@ void Rufflet::allActivities(){
 }
 
 PikiPek::PikiPek() {
-    name = "Fletchling";
-    region = "PikiPek";
-    std::cout <<"----- " << name <<" -----\n";
-    std::cout << name << "'s home region is " <<
-    region << ".\n";
+    name = "PikiPek";
+    region = "Kalos";
 }
 
 PikiPek::~PikiPek() {}
@@ -79,6 +78,10 @@ void PikiPek::performActivity(){
 }
 
 void PikiPek::allActivities(){
+    std::cout <<"----- " << name <<" -----\n";
+    std::cout << name << "'s home region is " <<
+    region << ".\n";
+
     setActivity(new PikiPekSpring());
     performActivity();
 
@@ -96,9 +99,6 @@ void PikiPek::allActivities(){
 Starly::Starly() {
     name = "Starly";
     region = "Unova";
-    std::cout <<"----- " << name <<" -----\n";
-    std::cout << name << "'s home region is " <<
-    region << ".\n";
 }
 
 Starly::~Starly() {}
@@ -108,6 +108,10 @@ void Starly::performActivity(){
 }
 
 void Starly::allActivities(){
+    std::cout <<"----- " << name <<" -----\n";
+    std::cout << name << "'s home region is " <<
+    region << ".\n";
+
     setActivity(new StarlySpring());
     performActivity();
 
