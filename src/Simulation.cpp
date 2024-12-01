@@ -9,6 +9,7 @@ Simulation::~Simulation() {
     for (RegionFactory* factory : factories) {
         delete factory;
     }
+    factories.clear();
 }
 
 void Simulation::Loop() {
