@@ -10,7 +10,7 @@ void Nest::printNest(){
         return;
     }
 
-    std::cout << "The nest is built of: ";
+    std::cout << "The Nest is built of: ";
     for (int i = 0; i < materials.size(); i++) {
         if(i > 0 && i== materials.size() -1) {
             std::cout << " and ";
