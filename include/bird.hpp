@@ -14,7 +14,7 @@ public:
  virtual void performActivity() = 0;
  Nest getNest();
  void setActivity(SeasonActivity* newActivity);
- virtual void allActivities();
+ virtual void allActivities() = 0;
 
  std::string name;
  SeasonActivity* activity;
