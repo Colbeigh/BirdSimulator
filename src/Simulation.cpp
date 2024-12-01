@@ -8,6 +8,11 @@ Simulation::Simulation() {
 Simulation::~Simulation() {
     delete factory1;
     delete factory2;
+
+    for (Bird* bird : birds) {
+    delete bird;
+    }
+    birds.clear();
 }
 
 void Simulation::Loop() {
