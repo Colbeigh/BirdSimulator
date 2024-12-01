@@ -18,7 +18,7 @@ Nest RuffletNestBuilder::buildNest(Nest& nest) {
 }
 
 Nest PikiPekNestBuilder::buildNest(Nest& nest) {
-    std::vector<std::string> materials = {"Newspaper"};
+    std::vector<std::string> materials = {"Moss", "Grass"};
     for (int i = 0; i < materials.size(); i++) {
         nest.addMaterial(materials[i]);
     }
@@ -26,8 +26,8 @@ Nest PikiPekNestBuilder::buildNest(Nest& nest) {
 }
 
 Nest StarlyNestBuilder::buildNest(Nest& nest) {
-    std::vector<std::string> materials = {"An Odd Branch",
-    "Magical Leaves", "Grass"};
+    std::vector<std::string> materials = {"Clay",
+    "Bark", "Sticks (around 30cm)"};
     for (int i = 0; i < materials.size(); i++) {
         nest.addMaterial(materials[i]);
     }
