@@ -12,7 +12,7 @@ Fletchling::Fletchling() {
     region = "Kalos";
     std::cout <<"----- " << name <<" -----\n";
     std::cout << name << "'s home region is " <<
-    region << "\n";
+    region << ".\n";
 }
 
 Fletchling::~Fletchling() {}
@@ -41,7 +41,7 @@ Rufflet::Rufflet() {
     region = "Unova";
     std::cout <<"----- " << name <<" -----\n";
     std::cout << name << "'s home region is " <<
-    region << "\n";
+    region << ".\n";
 }
 
 Rufflet::~Rufflet() {}
