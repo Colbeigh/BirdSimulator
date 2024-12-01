@@ -16,6 +16,5 @@ class Simulation {
     RegionFactory* factory2;
     std::vector<Bird*> birds1;
     std::vector<Bird*> birds2;
-    
 };
 #endif

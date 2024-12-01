@@ -17,12 +17,11 @@ Simulation::~Simulation() {
         delete bird;
     }
     birds2.clear();
-    
+
 }
 
 void Simulation::Loop() {
-
-        std::vector<Bird*> birds1 = factory1->createBird();
+        birds1 = factory1->createBird();
         for (int i = 0; i < birds1.size(); i++) {
            birds1[i]->allActivities();
         }
@@ -31,7 +30,7 @@ void Simulation::Loop() {
         }
         birds1.clear();
 
-                std::vector<Bird*> birds2 = factory2->createBird();
+        birds2 = factory2->createBird();
         for (int i = 0; i < birds2.size(); i++) {
            birds2[i]->allActivities();
         }
@@ -41,4 +40,3 @@ void Simulation::Loop() {
         birds2.clear();
 
 }
-
