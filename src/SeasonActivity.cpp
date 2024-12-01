@@ -1,7 +1,13 @@
 #include "SeasonActivity.hpp"
 
+FletchlingSpring::FletchlingSpring() {
+    nestbuilder = new FletchlingNestBuilder;
+    nestbuilder ->buildNest(nest);
+}
+
 void FletchlingSpring::performActivity() {
     std::cout << "Fletchling Spring Activity\n";
+    nest.printNest();
 }
 
 void FletchlingSummer::performActivity() {
@@ -16,8 +22,14 @@ void FletchlingWinter::performActivity() {
     std::cout << "Fletchling Winter Activity\n";
 }
 
+RuffletSpring::RuffletSpring() {
+    nestbuilder = new RuffletNestBuilder;
+    nestbuilder ->buildNest(nest);
+}
+
 void RuffletSpring::performActivity() {
     std::cout << "Rufflet Spring Activity\n";
+    nest.printNest();
 }
 
 void RuffletSummer::performActivity() {
