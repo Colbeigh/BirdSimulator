@@ -1,56 +1,58 @@
 #include <bird.hpp>
 
-Nest* Bird::getNest(){
+Nest Bird::getNest(){
     return nest;
 }
 
 void Bird::setActivity(SeasonActivity* newActivity){
-    activity = newActivity
+    activity = newActivity;
 }
 
 Fletchling::Fletchling() {
-    nestBuilder = new FletchlingNestBuilder;
-    nest = nestBuilder ->buildNest(nest);
+    nestbuilder = new FletchlingNestBuilder;
+    nestbuilder ->buildNest(nest);
+    name = "Fletchling";
 }
 
-void Fletchling::performActivity{
+void Fletchling::performActivity(){
     activity->performActivity();
 }
 
 void Fletchling::allActivities(){
     setActivity(new FletchlingSpring());
-    performActivity;
+    performActivity();
 
     setActivity(new FletchlingSummer());
-    performActivity;
+    performActivity();
 
     setActivity(new FletchlingFall());
-    performActivity;
+    performActivity();
 
     setActivity(new FletchlingWinter());
-    performActivity;
+    performActivity();
 }
 
 
 Rufflet::Rufflet() {
-    nestBuilder = new RuffletNestBuilder;
-    nest = nestBuilder ->buildNest
+    nestbuilder = new RuffletNestBuilder;
+    nest = nestbuilder ->buildNest(nest);
+    name = "Rufflet";
 }
 
-void Rufflet::performActivity{
+void Rufflet::performActivity(){
     activity->performActivity();
 }
 
 void Rufflet::allActivities(){
     setActivity(new RuffletSpring());
-    performActivity;
+    performActivity();
 
     setActivity(new RuffletSummer());
-    performActivity;
+    performActivity();
 
     setActivity(new RuffletFall());
-    performActivity;
+    performActivity();
 
     setActivity(new RuffletWinter());
-    performActivity;
+    performActivity();
 }
