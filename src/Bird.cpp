@@ -3,7 +3,9 @@ Bird::Bird() {
     activity = nullptr;
 }
 
-Bird::~Bird() {}
+Bird::~Bird() {
+    delete activity;
+}
 
 void Bird::setActivity(SeasonActivity* newActivity) {
     activity = newActivity;
