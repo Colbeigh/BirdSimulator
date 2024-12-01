@@ -28,11 +28,11 @@ class RuffletNestBuilder : public NestBuilder {
 class PikiPekNestBuilder : public NestBuilder {
  public:
   Nest buildNest(Nest& nest) override;
-   std::vector<std::string> materials;
+  std::vector<std::string> materials;
 };
 
 class StarlyNestBuilder : public NestBuilder {
-public:
+ public:
   Nest buildNest(Nest& nest) override;
   std::vector<std::string> materials;
 };
