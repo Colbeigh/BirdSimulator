@@ -1,6 +1,6 @@
 #include "NestBuilder.hpp"
 NestBuilder::NestBuilder() {
-    materials = {"NEws"};
+    materials = {""};
 }
 
 Nest NestBuilder::buildNest(Nest nest) {
