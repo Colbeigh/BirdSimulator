@@ -6,11 +6,11 @@
 #include <vector>
 
 class Nest {
-public:
- void addMaterial (std::string material);
- void printNest();
+ public:
+  void addMaterial(std::string material);
+  void printNest();
 
- std::vector<std::string> materials;
+  std::vector<std::string> materials;
 };
 
 #endif

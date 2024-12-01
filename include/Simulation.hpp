@@ -7,11 +7,11 @@
 #include "RegionFactory.hpp"
 
 class Simulation {
-public:
- Simulation();
- virtual ~Simulation();
- void Loop();
+ public:
+  Simulation();
+  virtual ~Simulation();
+  void Loop();
 
-std::vector<RegionFactory*> factories;
+ std::vector<RegionFactory*> factories;
 };
 #endif

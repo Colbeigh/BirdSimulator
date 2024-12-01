@@ -7,34 +7,34 @@
 #include "Nest.hpp"
 
 class NestBuilder {
-public:
- virtual Nest buildNest(Nest& nest) = 0;
+ public:
+  virtual Nest buildNest(Nest& nest) = 0;
 
- std::vector<std::string> materials;
+  std::vector<std::string> materials;
 };
 
 class FletchlingNestBuilder : public NestBuilder {
-public:
- Nest buildNest(Nest& nest) override;
- std::vector<std::string> materials;
+ public:
+  Nest buildNest(Nest& nest) override;
+  std::vector<std::string> materials;
 };
 
 class RuffletNestBuilder : public NestBuilder {
-public:
- Nest buildNest(Nest& nest) override;
- std::vector<std::string> materials;
+ public:
+  Nest buildNest(Nest& nest) override;
+  std::vector<std::string> materials;
 };
 
 class PikiPekNestBuilder : public NestBuilder {
-public:
- Nest buildNest(Nest& nest) override;
- std::vector<std::string> materials;
+ public:
+  Nest buildNest(Nest& nest) override;
+   std::vector<std::string> materials;
 };
 
 class StarlyNestBuilder : public NestBuilder {
 public:
- Nest buildNest(Nest& nest) override;
- std::vector<std::string> materials;
+  Nest buildNest(Nest& nest) override;
+  std::vector<std::string> materials;
 };
 
 #endif

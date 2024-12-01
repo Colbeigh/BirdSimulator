@@ -9,12 +9,12 @@ Simulation::~Simulation() {
     for (RegionFactory* factory : factories) {
         delete factory;
     }
-}   
+}
 
-void Simulation::Loop(){
+void Simulation::Loop() {
     for (RegionFactory* factory : factories) {
         std::vector<Bird*> birds = factory->createBird();
-        for(int i = 0; i < birds.size(); i++) {
+        for (int i = 0; i < birds.size(); i++) {
            birds[i]->allActivities();
         }
         for (Bird* bird : birds) {

@@ -28,7 +28,7 @@ void FletchlingWinter::performActivity(std::string name) {
     std::cout << name << " has found a mate and has laid an egg.\n\n";
 }
 
-RuffletSpring::RuffletSpring() { 
+RuffletSpring::RuffletSpring() {
     nestbuilder = new RuffletNestBuilder;
     nestbuilder ->buildNest(nest);
 }
@@ -90,7 +90,7 @@ void PikiPekWinter::performActivity(std::string name) {
     std::cout << name << " was caught by a trainer.\n\n";
 }
 
-StarlySpring::StarlySpring() { 
+StarlySpring::StarlySpring() {
     nestbuilder = new StarlyNestBuilder;
     nestbuilder ->buildNest(nest);
 }

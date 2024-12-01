@@ -7,18 +7,18 @@
 #include "Bird.hpp"
 
 class RegionFactory {
-public:
- virtual std::vector<Bird*> createBird() = 0;
+ public:
+  virtual std::vector<Bird*> createBird() = 0;
 };
 
 class KalosRegionFactory : public RegionFactory {
-public:
- std::vector<Bird*> createBird() override;
+ public:
+  std::vector<Bird*> createBird() override;
 };
 
 class UnovaRegionFactory : public RegionFactory {
-public:
- std::vector<Bird*> createBird() override;
+ public:
+  std::vector<Bird*> createBird() override;
 };
 
 

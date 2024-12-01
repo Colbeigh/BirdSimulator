@@ -1,9 +1,9 @@
 #include "Bird.hpp"
-Bird::Bird(){}
+Bird::Bird() {}
 
-Bird::~Bird(){}
+Bird::~Bird() {}
 
-void Bird::setActivity(SeasonActivity* newActivity){
+void Bird::setActivity(SeasonActivity* newActivity) {
     activity = newActivity;
 }
 
@@ -14,11 +14,11 @@ Fletchling::Fletchling() {
 
 Fletchling::~Fletchling() {}
 
-void Fletchling::performActivity(){
+void Fletchling::performActivity() {
     activity->performActivity(name);
 }
 
-void Fletchling::allActivities(){
+void Fletchling::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
     std::cout << name << "'s home region is " <<
     region << ".\n";
@@ -44,11 +44,11 @@ Rufflet::Rufflet() {
 
 Rufflet::~Rufflet() {}
 
-void Rufflet::performActivity(){
+void Rufflet::performActivity() {
     activity->performActivity(name);
 }
 
-void Rufflet::allActivities(){
+void Rufflet::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
     std::cout << name << "'s home region is " <<
     region << ".\n";
@@ -73,11 +73,11 @@ PikiPek::PikiPek() {
 
 PikiPek::~PikiPek() {}
 
-void PikiPek::performActivity(){
+void PikiPek::performActivity() {
     activity->performActivity(name);
 }
 
-void PikiPek::allActivities(){
+void PikiPek::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
     std::cout << name << "'s home region is " <<
     region << ".\n";
@@ -103,11 +103,11 @@ Starly::Starly() {
 
 Starly::~Starly() {}
 
-void Starly::performActivity(){
+void Starly::performActivity() {
     activity->performActivity(name);
 }
 
-void Starly::allActivities(){
+void Starly::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
     std::cout << name << "'s home region is " <<
     region << ".\n";
