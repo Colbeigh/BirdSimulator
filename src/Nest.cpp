@@ -1,6 +1,6 @@
 #include "Nest.hpp"
 
-void Nest::addMaterial(std::string material) {
+void Nest::addMaterial(const std::string& material) {
     materials.push_back(material);
 }
 

@@ -7,7 +7,7 @@
 
 class Nest {
  public:
-  void addMaterial(std::string material);
+  void addMaterial(const std::string& material);
   void printNest();
 
   std::vector<std::string> materials;
