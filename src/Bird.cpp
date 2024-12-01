@@ -26,7 +26,9 @@ Fletchling::Fletchling() {
     region = "Kalos";
 }
 
-Fletchling::~Fletchling() {}
+Fletchling::~Fletchling() {
+    delete activity;
+}
 
 void Fletchling::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
@@ -52,7 +54,9 @@ Rufflet::Rufflet() {
     region = "Unova";
 }
 
-Rufflet::~Rufflet() {}
+Rufflet::~Rufflet() {
+    delete activity;
+}
 
 void Rufflet::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
@@ -77,7 +81,9 @@ PikiPek::PikiPek() {
     region = "Kalos";
 }
 
-PikiPek::~PikiPek() {}
+PikiPek::~PikiPek() {
+    delete activity;
+}
 
 void PikiPek::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
@@ -103,7 +109,9 @@ Starly::Starly() {
     region = "Unova";
 }
 
-Starly::~Starly() {}
+Starly::~Starly() {
+    delete activity;
+}
 
 void Starly::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
