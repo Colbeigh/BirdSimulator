@@ -8,8 +8,6 @@
 
 class NestBuilder {
 public:
- NestBuilder();
- virtual ~NestBuilder();
  virtual Nest buildNest(Nest& nest) = 0;
 
  std::vector<std::string> materials;
