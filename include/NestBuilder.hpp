@@ -21,4 +21,10 @@ public:
  std::vector<std::string> materials;
 };
 
+class RuffletNestBuilder : public NestBuilder {
+public:
+ void buildNest(Nest& nest) override;
+ std::vector<std::string> materials;
+};
+
 #endif
