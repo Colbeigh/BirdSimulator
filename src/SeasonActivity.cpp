@@ -124,12 +124,12 @@ StarlySpring::~StarlySpring() {
 void StarlySpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     nest.printNest();
-    std::cout << name << "Protects its flock from wild Pikachu\n";
+    std::cout << name << " Protects its flock from wild Pikachu\n";
 }
 
 void StarlySummer::performActivity(std::string name) {
     std::cout << "\nSeason: Summer.\n";
-    std::cout << name << "Teaches its flock how to fight\n";
+    std::cout << name << " Teaches its flock how to fight\n";
 }
 
 void StarlyFall::performActivity(std::string name) {
