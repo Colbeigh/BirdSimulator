@@ -15,6 +15,7 @@ public:
  virtual void allActivities() = 0;
 
  std::string name;
+ std::string region;
  SeasonActivity* activity;
 };
 

@@ -9,6 +9,10 @@ void Bird::setActivity(SeasonActivity* newActivity){
 
 Fletchling::Fletchling() {
     name = "Fletchling";
+    region = "Kalos";
+    std::cout <<"----- " << name <<" -----\n";
+    std::cout << name << "'s home region is " <<
+    region << "\n";
 }
 
 Fletchling::~Fletchling() {}
@@ -34,6 +38,10 @@ void Fletchling::allActivities(){
 
 Rufflet::Rufflet() {
     name = "Rufflet";
+    region = "Unova";
+    std::cout <<"----- " << name <<" -----\n";
+    std::cout << name << "'s home region is " <<
+    region << "\n";
 }
 
 Rufflet::~Rufflet() {}
