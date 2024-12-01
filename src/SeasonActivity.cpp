@@ -5,6 +5,10 @@ FletchlingSpring::FletchlingSpring() {
     nest = nestbuilder ->buildNest(nest);
 }
 
+FletchlingSpring::~FletchlingSpring() {
+    delete nestbuilder;
+}
+
 void FletchlingSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     std::cout << "Migrating to Kanto.\n";
@@ -31,6 +35,10 @@ void FletchlingWinter::performActivity(std::string name) {
 RuffletSpring::RuffletSpring() {
     nestbuilder = new RuffletNestBuilder;
     nest = nestbuilder ->buildNest(nest);
+}
+
+RuffletSpring::~RuffletSpring() {
+    delete nestbuilder;
 }
 
 void RuffletSpring::performActivity(std::string name) {
@@ -65,6 +73,10 @@ PikiPekSpring::PikiPekSpring() {
     nest = nestbuilder ->buildNest(nest);
 }
 
+PikiPekSpring::~PikiPekSpring() {
+    delete nestbuilder;
+}
+
 void PikiPekSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     std::cout << "Migrating to Galar.\n";
@@ -93,6 +105,10 @@ void PikiPekWinter::performActivity(std::string name) {
 StarlySpring::StarlySpring() {
     nestbuilder = new StarlyNestBuilder;
     nest = nestbuilder ->buildNest(nest);
+}
+
+StarlySpring::~StarlySpring() {
+    delete nestbuilder;
 }
 
 void StarlySpring::performActivity(std::string name) {

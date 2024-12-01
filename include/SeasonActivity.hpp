@@ -43,6 +43,7 @@ class FletchlingWinter : public SeasonActivity {
 class RuffletSpring : public SeasonActivityWithNest {
  public:
   RuffletSpring();
+  virtual ~RuffletSpring();
   void performActivity(std::string name) override;
 };
 
