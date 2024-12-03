@@ -10,10 +10,10 @@ class Simulation {
  public:
   Simulation();
   virtual ~Simulation();
+  void setFactory(int input);
   void Loop();
 
-    RegionFactory* factory1;
-    RegionFactory* factory2;
+    RegionFactory* factory;
     std::vector<Bird*> birds;
 };
 #endif

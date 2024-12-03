@@ -3,6 +3,28 @@
 
 int main() {
     Simulation simulation;
-    simulation.Loop();
-    return 0;
+    int userinput;
+    bool exit = false;
+
+    while (!exit) {
+        std::cout << "Please pick a region)\n";
+        std::cout << "1.) Kalos\n";
+        std::cout << "2.) Unova\n";
+        std::cout << "3.) Exit\n";
+        std::cin >> userinput;
+        if (std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore(1000, '\n');
+            std::cout << "Invalid input. Please enter an integer between 1 and 3\n";
+        } else if (userinput != 1 && userinput != 2 && userinput != 3) {
+           std::cout << "Invalid input. Please enter an integer between 1 and 3\n";
+        } else if (userinput == 1 || userinput == 2) {
+            simulation.setFactory(userinput);
+            simulation.Loop();
+        } else {
+            std::cout << "Exiting\n";
+            exit = true;
+        }
+    }
+        return 0;
 }
