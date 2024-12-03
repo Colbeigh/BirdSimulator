@@ -15,23 +15,23 @@ int main() {
             std::cin.clear();
             std::cin.ignore(1000, '\n');
             std::cout << "Invalid input. Please enter an" <<
-            "integer between 1 and 3\n";
-            continue;
+            "integer between 1 and 3\n Exiting";
+            return 0;
         }
         if (userinput < 1 || userinput > 3) {
            std::cout << "Invalid input. Please enter an" <<
-           "integer between 1 and 3\n";
-           continue;
+           "integer between 1 and 3\n Exiting";
+           return 0;
         }
         switch (userinput) {
-            case 1:
-            case 2:
-                simulation.setFactory(userinput);
-                simulation.Loop();
+        case 1:
+        case 2:
+            simulation.setFactory(userinput);
+            simulation.Loop();
                 break;
-            case 3:
-                std::cout << "Exiting\n";
-                return 0;
+        case 3:
+            std::cout << "Exiting\n";
+            return 0;
         }
     }
     return 0;
