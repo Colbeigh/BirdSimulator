@@ -1,9 +1,14 @@
 #include "Simulation.hpp"
 
-Simulation::Simulation() {}
+Simulation::Simulation() {
+    factory = nullptr;
+}
 
 Simulation::~Simulation() {
-    delete factory;
+    if (factory) {
+        delete factory;
+        factory = nullptr;
+    }
     for (Bird* bird : birds) {
     delete bird;
     }
@@ -11,6 +16,11 @@ Simulation::~Simulation() {
 }
 
 void Simulation::setFactory(int input) {
+    if (factory) {
+        delete factory;
+        factory = nullptr;
+    }
+
     if (input == 1) {
         factory = new KalosRegionFactory;
     } else {
@@ -27,5 +37,4 @@ void Simulation::Loop() {
     delete bird;
     }
     birds.clear();
-    delete factory;
 }
