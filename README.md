@@ -2,12 +2,12 @@
 
 ## Birds
 ### Kalos
-* Fletchling
-* PikiPek
+* Kalosian Fletchling
+* Kalosian Rufflet
 
 ### Unova
-* Rufflet
-* Starly
+* Unovan Fletchling
+* Unovan Rufflet
 
 ## Activities
 ### Spring
@@ -38,15 +38,15 @@
 * Succumbing to its wounds
 
 ## Design Patterns
-### Factory Method Pattern
+### Abstract Factory Method Pattern
 * RegionFactory : Defines the abstract createBird() method for creating birds specific to a region.
 * RegionFactory.createBird() : Returns the birds in a specific region
 
 * KalosRegionFactory : Implements the createBird() method to create KalosBirds
-* RegionFactory.createBird() : calls KalosRegionFactory.createBird() to Return a vector of Unova birds
+* RegionFactory.createBird() : calls KalosRegionFactory.createBird() to Return a vector of Kalosian birds
 
 * UnovaRegionFactory : Implements the createBird() method to create Unova Birds
-* RegionFactory.createBird() : calls UnovaRegionFactory.createBird() to Return a vector of Unova birds
+* RegionFactory.createBird() : calls UnovaRegionFactory.createBird() to Return a vector of Unovan birds
 
 ### Strategy Method Pattern
 * SeasonActivity : Definies the abstract performActivity(string name) which performs the activities for that birds season
@@ -56,36 +56,36 @@
 * SeasonActivityWithNest() : Definies abstraction for constructor
 * bird.performActivity() : calls SeasonActivity.performActivity() to display the birds activities.
 
-* FletchlingSpring : Definies the abstract performActivity(string name) which performs the activities for that birds season
-* FletchlingSpring() : calls constructor to set nestbuilder to Fletchling nest.
-* fletchling.performActivity() : calls FletchlingSpring.performActivity() to display the birds activities for Spring and builds nest.
+* KalosianFletchlingSpring : Definies the abstract performActivity(string name) which performs the activities for that birds season
+* KalosianFletchlingSpring() : calls constructor to set nestbuilder to KalosianFletchling nest.
+* KalosianFletchling.performActivity() : calls KalosianFletchlingSpring.performActivity() to display the birds activities for Spring and builds nest.
 
-* FletchlingSummer : Definies the abstract performActivity(string name) which performs the activities for that birds season
-* fletchling.performActivity() : calls FletchlingSummer.performActivity() to display the birds activities for Summer.
+* KalosianFletchlingSummer : Definies the abstract performActivity(string name) which performs the activities for that birds season
+* KalosianFletchling.performActivity() : calls KalosianFletchlingSummer.performActivity() to display the birds activities for Summer.
 
-* FletchlingFall : Definies the abstract performActivity(string name) which performs the activities for that birds season
-* fletchling.performActivity() : calls FletchlingFall.performActivity() to display the birds activities for Fall.
+* KalosianFletchlingFall : Definies the abstract performActivity(string name) which performs the activities for that birds season
+* KalosianFletchling.performActivity() : calls KalosianFletchlingFall.performActivity() to display the birds activities for Fall.
 
-* FletchlingWinter : Definies the abstract performActivity(string name) which performs the activities for that birds season
-* fletchling.performActivity() : calls FletchlingWinter.performActivity() to display the birds activities for Winter.
+* KalosianFletchlingWinter : Definies the abstract performActivity(string name) which performs the activities for that birds season
+* KalosianFletchling.performActivity() : calls KalosianFletchlingWinter.performActivity() to display the birds activities for Winter.
 
-* There are duplicate classes for Rufflet, PikiPek, and Starly following the same format for all the same seasons.
+* There are duplicate classes for KalosianRufflet, UnovanKalosianFletchling, and UnovanRufflet following the same format for all the same seasons.
 
 ### Builder Pattern
 * NestBuilder : Holds construction process for the bird's nest. Calls methods to construct parts of the nest
 * Nest.buildNest() : calls nest.addMaterials() for length of materials
 
-* FletchlingNestBuilder : Calls nest.buildNest
-* Nest.buildNest() : calls Fletchling.addMaterials() specific for Fletchlings nest
+* KalosianFletchlingNestBuilder : Calls nest.buildNest
+* Nest.buildNest() : calls KalosianFletchling.addMaterials() specific for KalosianFletchlings nest
 
 * RuffletNestBuilder : Creates Rufflets nest
 * Nest.buildNest() : calls Rufflet.addMaterials() specific for Rufflet nest
 
-* PikiPekNestBuilder : Creates PikiPek nest
-* Nest.buildNest() : calls PikiPek.addMaterials() specific for PikiPeks nest
+* UnovanKalosianFletchlingNestBuilder : Creates UnovanKalosianFletchling nest
+* Nest.buildNest() : calls UnovanKalosianFletchling.addMaterials() specific for UnovanKalosianFletchlings nest
 
-* StarlyNestBuilder : Creates Starly nest
-* Nest.buildNest() : calls Starly.addMaterials() specific for Starly nest
+* UnovanRuffletNestBuilder : Creates UnovanRufflet nest
+* Nest.buildNest() : calls UnovanRufflet.addMaterials() specific for UnovanRufflet nest
 
 * Nest : is the nest the builder makes with the materials
 * Nest.printNest() : Displays the nest to the user
