@@ -17,17 +17,24 @@ int main() {
             std::cin.ignore(1000, '\n');
             std::cout << "Invalid input. Please enter an" <<
             "integer between 1 and 3\n";
-        } else if (userinput != 1 && userinput != 2
-            && userinput != 3) {
+            continue;
+        } 
+        if (userinput < 1 || userinput > 3) {
            std::cout << "Invalid input. Please enter an" <<
            "integer between 1 and 3\n";
-        } else if (userinput == 1 || userinput == 2) {
-            simulation.setFactory(userinput);
-            simulation.Loop();
-        } else {
-            std::cout << "Exiting\n";
-            exit = true;
+           continue;
+        } 
+        switch (userinput) {
+            case 1:
+            case 2:
+                simulation.setFactory(userinput);
+                simulation.Loop();
+                break;
+            case 3:
+                std::cout << "Exiting\n";
+                exit = true;
+
         }
-    }
         return 0;
+    }
 }
