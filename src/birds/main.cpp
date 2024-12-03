@@ -15,9 +15,12 @@ int main() {
         if (std::cin.fail()) {
             std::cin.clear();
             std::cin.ignore(1000, '\n');
-            std::cout << "Invalid input. Please enter an integer between 1 and 3\n";
-        } else if (userinput != 1 && userinput != 2 && userinput != 3) {
-           std::cout << "Invalid input. Please enter an integer between 1 and 3\n";
+            std::cout << "Invalid input. Please enter an" <<
+            "integer between 1 and 3\n";
+        } else if (userinput != 1 && userinput != 2 
+            && userinput != 3) {
+           std::cout << "Invalid input. Please enter an" <<
+           "integer between 1 and 3\n";
         } else if (userinput == 1 || userinput == 2) {
             simulation.setFactory(userinput);
             simulation.Loop();
