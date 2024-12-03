@@ -14,13 +14,13 @@ int main() {
         if (std::cin.fail()) {
             std::cin.clear();
             std::cin.ignore(1000, '\n');
-            std::cout << "Invalid input. Please enter an" <<
-            "integer between 1 and 3\n Exiting";
+            std::cout << "Invalid input. Please enter an " <<
+            "integer between 1 and 3 next time\n Exiting";
             return 0;
         }
         if (userinput < 1 || userinput > 3) {
-           std::cout << "Invalid input. Please enter an" <<
-           "integer between 1 and 3\n Exiting";
+           std::cout << "Invalid input. Please enter an " <<
+           "integer between 1 and 3 next time\n Exiting";
            return 0;
         }
         switch (userinput) {
