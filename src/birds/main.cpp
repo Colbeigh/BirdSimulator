@@ -20,8 +20,7 @@ int main() {
         }
         if (userinput < 1 || userinput > 3) {
            std::cout << "Invalid input. Please enter an " <<
-           "integer between 1 and 3 next time\n Exiting";
-           return 0;
+           "integer between 1 and 3\n";
         }
         switch (userinput) {
         case 1:
