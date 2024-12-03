@@ -16,7 +16,6 @@ void Simulation::Loop() {
         bird->allActivities();
     }
     birds1.clear();
-    delete birds1;
 
     for (Bird* bird : birds1) {
     delete bird;
@@ -32,5 +31,4 @@ void Simulation::Loop() {
     delete bird;
     }
     birds2.clear();
-    delete birds2;
 }

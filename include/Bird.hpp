@@ -18,31 +18,31 @@ class Bird {
   SeasonActivity* activity;
 };
 
-class Fletchling : public Bird {
+class KalosianFletchling : public Bird {
  public:
-  Fletchling();
-  virtual ~Fletchling();
+  KalosianFletchling();
+  virtual ~KalosianFletchling();
   void allActivities() override;
 };
 
-class Rufflet : public Bird {
+class KalosianRufflet : public Bird {
  public:
-  Rufflet();
-  virtual ~Rufflet();
+  KalosianRufflet();
+  virtual ~KalosianRufflet();
   void allActivities() override;
 };
 
-class PikiPek : public Bird {
+class UnovanFletchling : public Bird {
  public:
-  PikiPek();
-  virtual ~PikiPek();
+  UnovanFletchling();
+  virtual ~UnovanFletchling();
   void allActivities() override;
 };
 
-class Starly : public Bird {
+class UnovanRufflet : public Bird {
  public:
-  Starly();
-  virtual ~Starly();
+  UnovanRufflet();
+  virtual ~UnovanRufflet();
   void allActivities() override;
 };
 

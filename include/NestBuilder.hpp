@@ -13,24 +13,24 @@ class NestBuilder {
   std::vector<std::string> materials;
 };
 
-class FletchlingNestBuilder : public NestBuilder {
+class KalosianFletchlingNestBuilder : public NestBuilder {
  public:
-  FletchlingNestBuilder();
+  KalosianFletchlingNestBuilder();
 };
 
-class RuffletNestBuilder : public NestBuilder {
+class KalosianRuffletNestBuilder : public NestBuilder {
  public:
-  RuffletNestBuilder();
+  KalosianRuffletNestBuilder();
 };
 
-class PikiPekNestBuilder : public NestBuilder {
+class UnovanFletchlingNestBuilder : public NestBuilder {
  public:
-  PikiPekNestBuilder();
+  UnovanFletchlingNestBuilder();
 };
 
-class StarlyNestBuilder : public NestBuilder {
+class UnovanRuffletNestBuilder : public NestBuilder {
  public:
-  StarlyNestBuilder();
+  UnovanRuffletNestBuilder();
 };
 
 #endif

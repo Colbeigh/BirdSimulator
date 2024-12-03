@@ -9,20 +9,20 @@ Nest NestBuilder::buildNest() {
     return nest;
 }
 
-FletchlingNestBuilder::FletchlingNestBuilder() {
+KalosianFletchlingNestBuilder::KalosianFletchlingNestBuilder() {
     materials = {"Newspaper"};
 }
 
-RuffletNestBuilder::RuffletNestBuilder() {
+KalosianRuffletNestBuilder::KalosianRuffletNestBuilder() {
     materials = {"An Odd Branch",
     "Magical Leaves", "Grass"};
 }
 
-PikiPekNestBuilder::PikiPekNestBuilder() {
+UnovanFletchlingNestBuilder::UnovanFletchlingNestBuilder() {
     materials = {"Moss", "Grass"};
 }
 
-StarlyNestBuilder::StarlyNestBuilder() {
+UnovanRuffletNestBuilder::UnovanRuffletNestBuilder() {
     materials = {"Clay",
     "Bark", "Sticks (around 30cm)"};
 }

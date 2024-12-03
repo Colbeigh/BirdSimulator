@@ -1,9 +1,9 @@
 #include "RegionFactory.hpp"
 
 std::vector<Bird*> KalosRegionFactory::createBird() {
-    return {new Fletchling(), new PikiPek()};
+    return {new KalosianFletchling(), new KalosianRufflet()};
 }
 
 std::vector<Bird*> UnovaRegionFactory::createBird() {
-    return {new Rufflet(), new Starly()};
+    return {new UnovanFletchling(), new UnovanRufflet()};
 }

@@ -11,20 +11,20 @@ SeasonActivityWithNest::~SeasonActivityWithNest() {
     }
 }
 
-FletchlingSpring::FletchlingSpring() {
+KalosianFletchlingSpring::KalosianFletchlingSpring() {
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
-    nestbuilder = new FletchlingNestBuilder;
+    nestbuilder = new KalosianFletchlingNestBuilder;
     nest = nestbuilder ->buildNest();
 }
 
-FletchlingSpring::~FletchlingSpring() {
+KalosianFletchlingSpring::~KalosianFletchlingSpring() {
     delete nestbuilder;
 }
 
-void FletchlingSpring::performActivity(std::string name) {
+void KalosianFletchlingSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     std::cout << "Migrating to Kanto.\n";
     nest.printNest();
@@ -32,38 +32,38 @@ void FletchlingSpring::performActivity(std::string name) {
     "silver feathers.\n";
 }
 
-void FletchlingSummer::performActivity(std::string name) {
+void KalosianFletchlingSummer::performActivity(std::string name) {
     std::cout << "\nSeason: Summer\n";
     std::cout << name << " Is looking for apricots to eat.\n";
 }
 
-void FletchlingFall::performActivity(std::string name) {
+void KalosianFletchlingFall::performActivity(std::string name) {
     std::cout << "\nSeason: Fall.\n";
     std::cout << "Migrating to Galar.\n";
 }
 
-void FletchlingWinter::performActivity(std::string name) {
+void KalosianFletchlingWinter::performActivity(std::string name) {
     std::cout << "\nSeason: Winter\n";
     std::cout << name << " has found a mate and has laid an egg.\n\n";
 }
 
-RuffletSpring::RuffletSpring() {
+KalosianRuffletSpring::KalosianRuffletSpring() {
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
-    nestbuilder = new RuffletNestBuilder;
+    nestbuilder = new KalosianRuffletNestBuilder;
     nest = nestbuilder ->buildNest();
 }
 
-RuffletSpring::~RuffletSpring() {
+KalosianRuffletSpring::~KalosianRuffletSpring() {
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
 }
 
-void RuffletSpring::performActivity(std::string name) {
+void KalosianRuffletSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     std::cout << "Migrating to Johto.\n";
     nest.printNest();
@@ -71,18 +71,18 @@ void RuffletSpring::performActivity(std::string name) {
     "steel wings.\n";
 }
 
-void RuffletSummer::performActivity(std::string name) {
+void KalosianRuffletSummer::performActivity(std::string name) {
     std::cout << "\nSeason: Summer.\n";
     std::cout << name << " has settled for a non steel " <<
     "winged bird.\n";
 }
 
-void RuffletFall::performActivity(std::string name) {
+void KalosianRuffletFall::performActivity(std::string name) {
     std::cout << "\nSeason: Fall.\n";
     std::cout << name << " reluctantly mates and lays an egg.\n";
 }
 
-void RuffletWinter::performActivity(std::string name) {
+void KalosianRuffletWinter::performActivity(std::string name) {
     std::cout << "\nSeason: Winter.\n";
     std::cout << name << " Ditches its mate to find a steel " <<
     "winged bird\n";
@@ -90,23 +90,23 @@ void RuffletWinter::performActivity(std::string name) {
 }
 
 
-PikiPekSpring::PikiPekSpring() {
+UnovanFletchlingSpring::UnovanFletchlingSpring() {
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
-    nestbuilder = new PikiPekNestBuilder;
+    nestbuilder = new UnovanFletchlingNestBuilder;
     nest = nestbuilder ->buildNest();
 }
 
-PikiPekSpring::~PikiPekSpring() {
+UnovanFletchlingSpring::~UnovanFletchlingSpring() {
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
 }
 
-void PikiPekSpring::performActivity(std::string name) {
+void UnovanFletchlingSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     std::cout << "Migrating to Galar.\n";
     nest.printNest();
@@ -114,57 +114,57 @@ void PikiPekSpring::performActivity(std::string name) {
     "cannot fly.\n";
 }
 
-void PikiPekSummer::performActivity(std::string name) {
+void UnovanFletchlingSummer::performActivity(std::string name) {
     std::cout << "\nSeason: Summer\n";
     std::cout << name << " Started a battle with a Diglett.\n";
     std::cout << name << " is tending its wounds.\n";
 }
 
-void PikiPekFall::performActivity(std::string name) {
+void UnovanFletchlingFall::performActivity(std::string name) {
     std::cout << "\nSeason: Fall.\n";
     std::cout << "Migrating to Hoenn.\n";
     std::cout << "Looking for a meal along the beach.\n";
 }
 
-void PikiPekWinter::performActivity(std::string name) {
+void UnovanFletchlingWinter::performActivity(std::string name) {
     std::cout << "\nSeason: Winter\n";
     std::cout << name << " was caught by a trainer.\n\n";
 }
 
-StarlySpring::StarlySpring() {
+UnovanRuffletSpring::UnovanRuffletSpring() {
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
-    nestbuilder = new StarlyNestBuilder;
+    nestbuilder = new UnovanRuffletNestBuilder;
     nest = nestbuilder ->buildNest();
 }
 
-StarlySpring::~StarlySpring() {
+UnovanRuffletSpring::~UnovanRuffletSpring() {
     if (nestbuilder) {
         delete nestbuilder;
         nestbuilder = nullptr;
     }
 }
 
-void StarlySpring::performActivity(std::string name) {
+void UnovanRuffletSpring::performActivity(std::string name) {
     std::cout << "\nSeason: Spring.\n";
     nest.printNest();
     std::cout << name << " Protects its flock from wild Pikachu\n";
 }
 
-void StarlySummer::performActivity(std::string name) {
+void UnovanRuffletSummer::performActivity(std::string name) {
     std::cout << "\nSeason: Summer.\n";
     std::cout << name << " Teaches its flock how to fight\n";
 }
 
-void StarlyFall::performActivity(std::string name) {
+void UnovanRuffletFall::performActivity(std::string name) {
     std::cout << "\nSeason: Fall.\n";
     std::cout << name << " gets injured fending off the " <<
     "wild Pikachu.\n";
 }
 
-void StarlyWinter::performActivity(std::string name) {
+void UnovanRuffletWinter::performActivity(std::string name) {
     std::cout << "\nSeason: Winter.\n";
     std::cout << name << " succumbs to its wounds \n\n";
 }

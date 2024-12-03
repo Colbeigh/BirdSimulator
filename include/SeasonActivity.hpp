@@ -20,90 +20,90 @@ class SeasonActivityWithNest : public SeasonActivity {
   NestBuilder* nestbuilder;
 };
 
-class FletchlingSpring : public SeasonActivityWithNest {
+class KalosianFletchlingSpring : public SeasonActivityWithNest {
  public:
-  FletchlingSpring();
-  virtual ~FletchlingSpring();
+  KalosianFletchlingSpring();
+  virtual ~KalosianFletchlingSpring();
   void performActivity(std::string name) override;
 };
 
-class FletchlingSummer : public SeasonActivity {
- public:
-  void performActivity(std::string name) override;
-};
-
-class FletchlingFall : public SeasonActivity {
+class KalosianFletchlingSummer : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class FletchlingWinter : public SeasonActivity {
+class KalosianFletchlingFall : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class RuffletSpring : public SeasonActivityWithNest {
- public:
-  RuffletSpring();
-  virtual ~RuffletSpring();
-  void performActivity(std::string name) override;
-};
-
-class RuffletSummer : public SeasonActivity {
+class KalosianFletchlingWinter : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class RuffletFall : public SeasonActivity {
+class KalosianRuffletSpring : public SeasonActivityWithNest {
+ public:
+  KalosianRuffletSpring();
+  virtual ~KalosianRuffletSpring();
+  void performActivity(std::string name) override;
+};
+
+class KalosianRuffletSummer : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class RuffletWinter : public SeasonActivity {
+class KalosianRuffletFall : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class PikiPekSpring : public SeasonActivityWithNest {
- public:
-  PikiPekSpring();
-  virtual ~PikiPekSpring();
-  void performActivity(std::string name) override;
-};
-
-class PikiPekSummer : public SeasonActivity {
+class KalosianRuffletWinter : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class PikiPekFall : public SeasonActivity {
+class UnovanFletchlingSpring : public SeasonActivityWithNest {
+ public:
+  UnovanFletchlingSpring();
+  virtual ~UnovanFletchlingSpring();
+  void performActivity(std::string name) override;
+};
+
+class UnovanFletchlingSummer : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class PikiPekWinter : public SeasonActivity {
+class UnovanFletchlingFall : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class StarlySpring : public SeasonActivityWithNest {
- public:
-  StarlySpring();
-  virtual ~StarlySpring();
-  void performActivity(std::string name) override;
-};
-
-class StarlySummer : public SeasonActivity {
+class UnovanFletchlingWinter : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class StarlyFall : public SeasonActivity {
+class UnovanRuffletSpring : public SeasonActivityWithNest {
+ public:
+  UnovanRuffletSpring();
+  virtual ~UnovanRuffletSpring();
+  void performActivity(std::string name) override;
+};
+
+class UnovanRuffletSummer : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };
 
-class StarlyWinter : public SeasonActivity {
+class UnovanRuffletFall : public SeasonActivity {
+ public:
+  void performActivity(std::string name) override;
+};
+
+class UnovanRuffletWinter : public SeasonActivity {
  public:
   void performActivity(std::string name) override;
 };

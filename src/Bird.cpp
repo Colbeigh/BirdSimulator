@@ -22,128 +22,115 @@ void Bird::performActivity() {
     activity->performActivity(name);
 }
 
-Fletchling::Fletchling() {
-    name = "Fletchling";
-    region = "Kalos";
+KalosianFletchling::KalosianFletchling() {
+    name = "Kalosian Fletchling";
     activity = nullptr;
 }
 
-Fletchling::~Fletchling() {
+KalosianFletchling::~KalosianFletchling() {
     if (activity) {
         delete activity;
         activity = nullptr;
     }
 }
 
-void Fletchling::allActivities() {
+void KalosianFletchling::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
-    std::cout << name << "'s home region is " <<
-    region << ".\n";
 
-    setActivity(new FletchlingSpring());
+    setActivity(new KalosianFletchlingSpring());
     performActivity();
 
-    setActivity(new FletchlingSummer());
+    setActivity(new KalosianFletchlingSummer());
     performActivity();
 
-    setActivity(new FletchlingFall());
+    setActivity(new KalosianFletchlingFall());
     performActivity();
 
-    setActivity(new FletchlingWinter());
+    setActivity(new KalosianFletchlingWinter());
     performActivity();
 }
 
 
-Rufflet::Rufflet() {
-    name = "Rufflet";
-    region = "Unova";
+KalosianRufflet::KalosianRufflet() {
+    name = "Kalosian Rufflet";
     activity = nullptr;
 }
 
-Rufflet::~Rufflet() {
+KalosianRufflet::~KalosianRufflet() {
     if (activity) {
         delete activity;
         activity = nullptr;
     }
 }
 
-void Rufflet::allActivities() {
+void KalosianRufflet::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
-    std::cout << name << "'s home region is " <<
-    region << ".\n";
 
-    setActivity(new RuffletSpring());
+    setActivity(new KalosianRuffletSpring());
     performActivity();
 
-    setActivity(new RuffletSummer());
+    setActivity(new KalosianRuffletSummer());
     performActivity();
 
-    setActivity(new RuffletFall());
+    setActivity(new KalosianRuffletFall());
     performActivity();
 
-    setActivity(new RuffletWinter());
+    setActivity(new KalosianRuffletWinter());
     performActivity();
 }
 
-PikiPek::PikiPek() {
-    name = "PikiPek";
-    region = "Kalos";
+UnovanFletchling::UnovanFletchling() {
+    name = "Unovan Fletchling";
     activity = nullptr;
 }
 
-PikiPek::~PikiPek() {
+UnovanFletchling::~UnovanFletchling() {
     if (activity) {
         delete activity;
         activity = nullptr;
     }
 }
 
-void PikiPek::allActivities() {
+void UnovanFletchling::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
-    std::cout << name << "'s home region is " <<
-    region << ".\n";
-
-    setActivity(new PikiPekSpring());
+    setActivity(new UnovanFletchlingSpring());
     performActivity();
 
-    setActivity(new PikiPekSummer());
+    setActivity(new UnovanFletchlingSummer());
     performActivity();
 
-    setActivity(new PikiPekFall());
+    setActivity(new UnovanFletchlingFall());
     performActivity();
 
-    setActivity(new PikiPekWinter());
+    setActivity(new UnovanFletchlingWinter());
     performActivity();
 }
 
 
-Starly::Starly() {
-    name = "Starly";
-    region = "Unova";
+UnovanRufflet::UnovanRufflet() {
+    name = "Unovan Rufflet";
     activity = nullptr;
 }
 
-Starly::~Starly() {
+UnovanRufflet::~UnovanRufflet() {
     if (activity) {
         delete activity;
         activity = nullptr;
     }
 }
 
-void Starly::allActivities() {
+void UnovanRufflet::allActivities() {
     std::cout <<"----- " << name <<" -----\n";
-    std::cout << name << "'s home region is " <<
-    region << ".\n";
 
-    setActivity(new StarlySpring());
+    setActivity(new UnovanRuffletSpring());
     performActivity();
 
-    setActivity(new StarlySummer());
+    setActivity(new UnovanRuffletSummer());
     performActivity();
 
-    setActivity(new StarlyFall());
+    setActivity(new UnovanRuffletFall());
     performActivity();
 
-    setActivity(new StarlyWinter());
+    setActivity(new UnovanRuffletWinter());
     performActivity();
 }
